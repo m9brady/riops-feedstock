@@ -18,5 +18,8 @@ maintainers:
   - name: "James Munroe"
     orcid: "0000-0002-4078-0852"
     github: jmunroe
+  - name: "Mike Brady"
+    orcid: 0000-0001-8263-0951
+    github: m2brady
 bakery:
   id: "pangeo-ldeo-nsf-earthcube"
