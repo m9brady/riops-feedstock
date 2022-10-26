@@ -42,7 +42,6 @@ def process_input(ds, filename):
 
 recipe = XarrayZarrRecipe(
     file_pattern=pattern,
-    # NOTE: other 2D RIOPS variables (e.g. IICECONC) have different xc/yc
     target_chunks={"time": 1, "xc": 450, "yc": 410},
     process_input=process_input,
 )
