@@ -30,13 +30,11 @@ time_concat_dim = ConcatDim("time", range(84), nitems_per_file=1)
 pattern = FilePattern(make_url, variable_merge_dim, time_concat_dim)
 
 
-def process_input(ds, filename):
+def process_input(ds):
     ds = ds.drop("polar_stereographic")
-
     # use an encoding that is valid of hourly data
     units = f'hours since {start_date.strftime("%Y-%m-%d")} 00:00:00'
     ds.time.encoding = {"units": units, "calendar": "proleptic_gregorian"}
-
     return ds
 
 

@@ -1,7 +1,6 @@
 title: "RIOPS"
 description: "Regional Ice Ocean Prediction System (RIOPS) data available on the Meteorological Service of Canada (MSC) Datamart"
-pangeo_forge_version: "0.8.2"
-pangeo_notebook_version: "2021.12.02"
+pangeo_forge_version: "0.9.2"
 recipes:
   - id: riops
     object: "recipe:recipe"
@@ -19,7 +18,7 @@ maintainers:
     orcid: "0000-0002-4078-0852"
     github: jmunroe
   - name: "Mike Brady"
-    orcid: 0000-0001-8263-0951
-    github: m2brady
+    orcid: "0000-0001-8263-0951"
+    github: m9brady
 bakery:
   id: "pangeo-ldeo-nsf-earthcube"
