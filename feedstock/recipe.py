@@ -32,19 +32,19 @@ variable_merge_dim = MergeDim(
         "VOSALINE",  # Sea water salinity
         "VOZOCRTX",  # X-component of water velocity
         "VOMECRTY",  # Y-component of water velocity
-        # "IICECONC", # Sea ice fraction
-        # "IICEVOL", # Volume of sea ice per unit grid cell area
-        # "ISNOWVOL", # Volume of snow on sea ice per unit grid cell area
-        # "IICESTRENGTH", # Vertically integrated compressive ice strength
-        # "IICEPRESSURE", # Vertically integrated ice internal pressure
-        # "IICESURFTEMP", # Surface temperature of sea ice/snow
-        # "IICEDIVERGENCE",
-        # "IICESHEAR",
-        # "ITZOCRTX", # X-component of sea ice velocity
-        # "ITMERCTY", # Y-component of sea ice velocity
-        # "SOKARAML", # Mixed layer depth based on a density criterion
-        # "SOMIXHGT", # Turbocline depth
-        # "SOSSHEIG", # Sea surface height
+        # "IICECONC",  # Sea ice fraction
+        # "IICEVOL",  # Volume of sea ice per unit grid cell area
+        # "ISNOWVOL",  # Volume of snow on sea ice per unit grid cell area
+        # "IICESTRENGTH",  # Vertically integrated compressive ice strength
+        # "IICEPRESSURE",  # Vertically integrated ice internal pressure
+        # "IICESURFTEMP",  # Surface temperature of sea ice/snow
+        # "IICEDIVERGENCE",  # Sea ice divergence
+        # "IICESHEAR",  # Sea ice shear
+        # "ITZOCRTX",  # X-component of sea ice velocity
+        # "ITMERCTY",  # Y-component of sea ice velocity
+        # "SOKARAML",  # Mixed layer depth based on a density criterion
+        # "SOMIXHGT",  # Turbocline depth
+        # "SOSSHEIG",  # Sea surface height
     ],
 )
 
