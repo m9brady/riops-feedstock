@@ -1,5 +1,3 @@
-from datetime import datetime, date, timedelta
-from os.path import basename
 from pangeo_forge_recipes.patterns import ConcatDim, MergeDim, FilePattern
 from pangeo_forge_recipes.recipes import XarrayZarrRecipe
 
@@ -8,6 +6,8 @@ from pangeo_forge_recipes.recipes import XarrayZarrRecipe
 # Thus, we use yesterday's date to ensure the feedstock can run
 def make_url(variable, time):
     """Currently hardcoded for 2D variables run at 00Z"""
+    from datetime import datetime, date, timedelta
+
     riops_ps_base_url = (
         "https://dd.weather.gc.ca/model_riops/netcdf/forecast/polar_stereographic"
     )
@@ -54,6 +54,9 @@ pattern = FilePattern(make_url, variable_merge_dim, time_concat_dim)
 
 
 def process_input(ds, filename):
+    from datetime import datetime
+    from os.path import basename
+
     # use the first 8 chars of filename to get the model run date
     model_run_date = datetime.strptime(basename(filename)[:8], "%Y%m%d")
     ds = ds.drop("polar_stereographic")
